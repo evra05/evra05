@@ -1,0 +1,92 @@
+/**
+ *Name: Evra Salvateara
+ *ID: AM2307013934
+ *Section:01
+ *Purpose: To create a inventory for a flower shop
+ */
+public class Flower
+{
+    // Represent Flower object with name, color, price, and quantity attributes
+    private String name;
+    private String color;
+    private double price;
+    private int quantity;
+    
+    /*
+     * Contructs a Flower object with default value
+    */
+    public Flower()
+    {
+        this.name = "";
+        this.color = "";
+        this.price = 0;
+        this.quantity = 0;
+    }
+
+    // Constructs a Flower object with specified attributes
+    public Flower(String name, String color, double price, int quantity)
+    {
+        this.name = name;
+        this.color = color;
+        this.price = price;
+        this.quantity = quantity;
+    }
+    
+    // Return the name of the flower
+    public String getName()
+    {
+        return name;
+    }
+    
+    //Return the color of the flower
+    public String getColor()
+    {
+        return color;
+    }
+    
+    //Return the price of the flower
+    public double getPrice()
+    {
+        return price;
+    }
+    
+    //Return the quantity of the flower
+    public int getQuantity()
+    {
+        return quantity;
+    }
+    
+    //Set the name of the flower
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+    
+    //Set the color of the flower
+    public void setColor(String color)
+    {
+        this.color = color;
+    }
+    
+    //Set the price of the flower
+    public void setPrice(double price)
+    {
+        this.price = price;
+    }
+    
+    //Set the quantity of the flower
+    public void setQuantity(int quantity)
+    {
+        this.quantity = quantity;
+    }
+    
+    //Returns a string representation of the flower object
+    public String toString()
+    {
+        return
+        "Name:" + name +
+        "\nColor:" + color +
+        "\nPrice:" + price + 
+        "\nQuantity:" + quantity;
+    }
+}
